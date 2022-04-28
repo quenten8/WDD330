@@ -1,0 +1,46 @@
+body {
+    font-size: 16px;
+    margin: 1rem auto;
+    max-width: 900px;
+    padding: 8px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+header, footer{
+    background-color: #2980B9;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin: 20px;
+    box-shadow: 10px 6px 20px rgba(128, 128, 128, 0.6), -6px -10px 20px rgba(128, 128, 128, 0.6);
+    border-radius: 5px;
+}
+
+header {
+    height: auto;
+    justify-content: center;
+    gap: 10px;
+}
+footer {
+    height: auto;
+    margin-top: 30px;
+}
+.footerText {
+    display: inline-flex;
+    padding: -30px;
+    line-height:0;
+}
+.date {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-top: -40px;
+    font-size: 14px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}

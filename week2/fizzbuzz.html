@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fizzbuzz</title>
+</head>
+<body>
+    <main>
+<script>
+    for(let i = 1; i < 101; i++) {
+        if(i % 3 == 0 && i % 5 == 0) {
+            console.log("FizzBuzz");
+            i++
+        } if(i % 3 == 0) {
+            console.log("Fizz");
+            i++
+        } if(i % 5 == 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i)
+        }
+}
+</script>
+<h2>View console</h2>
+<div style="white-space: pre-wrap">    for(let i = 1; i < 101; i++) {
+    if(i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuzz");
+        i++
+    } if(i % 3 == 0) {
+        console.log("Fizz");
+        i++
+    } if(i % 5 == 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i)
+    }
+}</div>
+    </main>
+</body>
+</html>
