@@ -4,9 +4,16 @@ const link = [
     url: "week2/looping_a_triangle.html"},
     {week: "2",
     label: "Fizzbuzz",
-    url: "week2/fizzbuzz.html"},    {week: "2",
+    url: "week2/fizzbuzz.html"},    
+    {week: "2",
     label: "Chessboard",
-    url: "week2/chessboard.html"}
+    url: "week2/chessboard.html"},    
+    {week: "3",
+    label: "Building a table",
+    url: "week3/building_a_table.html"},    
+    {week: "3",
+    label: "Balloon",
+    url: "week3/balloon.html"}
             ]
 const list = document.querySelector('#list');
 

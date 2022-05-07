@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h1>Mountains</h1>
+
+        <div id="mountains"></div>
+        
+        <script>
+          const MOUNTAINS = [
+            {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+            {name: "Everest", height: 8848, place: "Nepal"},
+            {name: "Mount Fuji", height: 3776, place: "Japan"},
+            {name: "Vaalserberg", height: 323, place: "Netherlands"},
+            {name: "Denali", height: 6168, place: "United States"},
+            {name: "Popocatepetl", height: 5465, place: "Mexico"},
+            {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+          ];
+        
+            let table = document.createElement("table");
+            let header = document.createElement("tr");
+            let h1 = document.createElement("td");
+            let h2 = document.createElement("td");
+            let h3 = document.createElement("td");
+
+            h1.innerHTML = "Name:";
+            h2.innerHTML = "Height:";
+            h3.innerHTML = "Place:";
+
+            header.appendChild(h1);
+            header.appendChild(h2);
+            header.appendChild(h3);
+            table.appendChild(header);
+            document.getElementById("mountains").appendChild(table);
+
+            for(var i = 0; i < MOUNTAINS.length; i++) {
+
+            let name = MOUNTAINS[i].name;
+            let height = MOUNTAINS[i].height;
+            let place = MOUNTAINS[i].place;
+
+            let mountain = document.createElement("tr");
+            let cellName = document.createElement("td");
+            let cellHeight = document.createElement("td");
+            let cellPlace = document.createElement("td");
+
+            cellName.innerHTML = name;
+            cellHeight.innerHTML = `${height} feet`;
+            cellPlace.innerHTML = place;
+
+            if (typeof height == "number") {
+                cellHeight.style.textAlign = "right";
+            };
+
+            mountain.appendChild(cellName)
+            mountain.appendChild(cellHeight)
+            mountain.appendChild(cellPlace)
+            table.appendChild(mountain)
+            };
+
+        </script>
+    </main>
+</body>
+</html>

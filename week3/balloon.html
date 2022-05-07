@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+      <h2>Arrow up & down</h2>
+      <p id="balloon">🎈</p>
+
+      <script>
+        let size = 40;
+        document.getElementById("balloon").style.fontSize = `${size}px`;
+
+        document.addEventListener('keydown', function balloon() {
+          if(event.key == "ArrowUp"){
+            size = size * 1.3;
+            document.getElementById("balloon").style.fontSize = `${size}px`;
+            
+          } if(event.key == "ArrowDown"){
+            size = size / 1.3;
+            document.getElementById("balloon").style.fontSize = `${size}px`;
+          } if(size > 400){
+            document.getElementById("balloon").innerHTML = "💥";
+        }});
+      </script>
+    </main>
+</body>
+</html>
