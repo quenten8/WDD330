@@ -13,7 +13,13 @@ const link = [
     url: "week3/building_a_table.html"},    
     {week: "3",
     label: "Balloon",
-    url: "week3/balloon.html"}
+    url: "week3/balloon.html"},
+    {week: "4",
+    label: "Vector",
+    url: "week4/vector.html"},
+    {week: "4",
+    label: "Groups",
+    url: "week4/groups.html"}
             ]
 const list = document.querySelector('#list');
 

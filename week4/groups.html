@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+      <h2>Chapter 6, Groups</h2>
+
+      <script>
+        class Group {
+            constructor() {
+                this.numbers = [];
+            };
+            
+            static from(starting_num) {
+                let group = new Group;
+                
+                for (let num of starting_num) {
+                    group.add(num);
+                }
+                return group;
+            }
+
+            add(num) {
+                if(this.has(num) == false) {
+                    this.numbers.push(num);
+                }
+            };
+
+            delete(num) {
+                this.numbers = this.numbers.filter(function(x) {
+                    x !== num
+                });
+            };
+
+            has(num) {
+                if(this.numbers.includes(num)) {
+                    return true;
+                } else return false;
+            };
+        };
+        
+        let group = Group.from([10, 20]);
+        console.log(group.has(10));
+        // → true
+        console.log(group.has(30));
+        // → false
+        group.add(10);
+        group.delete(10);
+        console.log(group.has(10));
+        // → false      
+      </script>
+      <div style="white-space: pre-wrap">
+        class Group {
+            constructor() {
+                this.numbers = [];
+            };
+            
+            static from(starting_num) {
+                let group = new Group;
+                
+                for (let num of starting_num) {
+                    group.add(num);
+                }
+                return group;
+            }
+
+            add(num) {
+                if(this.has(num) == false) {
+                    this.numbers.push(num);
+                }
+            };
+
+            delete(num) {
+                this.numbers = this.numbers.filter(function(x) {
+                    x !== num
+                });
+            };
+
+            has(num) {
+                if(this.numbers.includes(num)) {
+                    return true;
+                } else return false;
+            };
+        };
+
+        let group = Group.from([10, 20]);
+        console.log(group.has(10));
+        // → true
+        console.log(group.has(30));
+        // → false
+        group.add(10);
+        group.delete(10);
+        console.log(group.has(10));
+        // → false 
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+      <h2>Chapter 6, A Vector Type</h2>
+
+      <script>
+        class Vec {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            };
+            plus(that) {
+                return new Vec(this.x + that.x, this.y + that.y)
+            };
+            minus(that) {
+                return new Vec(this.x - that.x, this.y - that.y)
+            };
+            get length() {
+                return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+            };
+        };
+        console.log(new Vec(1, 2).plus(new Vec(2, 3)));
+        // → Vec{x: 3, y: 5}
+        console.log(new Vec(1, 2).minus(new Vec(2, 3)));
+        // → Vec{x: -1, y: -1}
+        console.log(new Vec(3, 4).length);
+        // → 5
+      </script>
+            <div style="white-space: pre-wrap">
+                class Vec {
+                    constructor(x, y) {
+                        this.x = x;
+                        this.y = y;
+                    };
+                    plus(that) {
+                        return new Vec(this.x + that.x, this.y + that.y)
+                    };
+                    minus(that) {
+                        return new Vec(this.x - that.x, this.y - that.y)
+                    };
+                    get length() {
+                        return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+                    };
+                };
+                
+                console.log(new Vec(1, 2).plus(new Vec(2, 3)));
+                // → Vec{x: 3, y: 5}
+                console.log(new Vec(1, 2).minus(new Vec(2, 3)));
+                // → Vec{x: -1, y: -1}
+                console.log(new Vec(3, 4).length);
+                // → 5
+            </div>
+    </main>
+</body>
+</html>
