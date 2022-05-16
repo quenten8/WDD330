@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: fit-content;
+    margin: 100px auto;
+}
+.tile {
+width: 100px;
+height: 100px;
+}
+.tile:nth-child(3n-1) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.tile:nth-child(4), .tile:nth-child(5), .tile:nth-child(6) {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.tile div {
+    font-size: 80px;
+    text-align: center;
+}
+#reset {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <main>
+        <div id="board">
+            <div id="1" class="tile"></div>
+            <div id="2" class="tile"></div>
+            <div id="3" class="tile"></div>
+            <div id="4" class="tile"></div>
+            <div id="5" class="tile"></div>
+            <div id="6" class="tile"></div>
+            <div id="7" class="tile"></div>
+            <div id="8" class="tile"></div>
+            <div id="9" class="tile"></div>
+        </div>
+        <div id="reset"><p>Reset</p></div>
+      <script>
+          const tiles = document.querySelectorAll('.tile');
+          const reset = document.getElementById("reset");
+          let i = 0;
+          let player;
+
+         add = function() {
+            
+             if(event.target.childNodes.length == 0) {
+                player = "X"
+                if(i % 2 ==0) {
+                    player = "O"
+                }
+                    let a = document.createElement("div");
+                    a.textContent = player;
+                    event.target.appendChild(a);
+                i++;
+            } else return;
+         };
+
+         remove = function() {
+            tiles.forEach(tile => {
+                while (tile.firstChild) {
+                tile.firstChild.remove()
+         }})
+         }
+
+        document.addEventListener('touchend', add)
+          
+        reset.addEventListener('touchend',remove);
+
+if (getElementById("1") == "X" || "O") {
+alert()
+}
+
+      </script>
+    </main>
+</body>
+</html>
