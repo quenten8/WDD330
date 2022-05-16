@@ -19,7 +19,10 @@ const link = [
     url: "week4/vector.html"},
     {week: "4",
     label: "Groups",
-    url: "week4/groups.html"}
+    url: "week4/groups.html"},
+    {week: "4",
+    label: "Tic Tac Toe",
+    url: "week4/tictac.html"}
             ]
 const list = document.querySelector('#list');
 
