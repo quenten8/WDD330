@@ -22,7 +22,10 @@ const link = [
     url: "week4/groups.html"},
     {week: "4",
     label: "Tic Tac Toe",
-    url: "week4/tictac.html"}
+    url: "week4/tictac.html"},
+    {week: "5",
+    label: "Events",
+    url: "week5/events.html"}
             ]
 const list = document.querySelector('#list');
 
