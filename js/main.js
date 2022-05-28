@@ -25,7 +25,10 @@ const link = [
     url: "week4/tictac.html"},
     {week: "5",
     label: "Events",
-    url: "week5/events.html"}
+    url: "week5/events.html"},
+    {week: "6",
+    label: "To do list",
+    url: "week6/todo.html"}
             ]
 const list = document.querySelector('#list');
 
