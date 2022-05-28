@@ -97,11 +97,24 @@ function display(array) {
                 array[event.target.id].complete = 'no';
                 doneButton.innerHTML = "Complete"
                 localStorage.setItem("items", JSON.stringify(items));
+
+                if(setFilter == 'active') {
+                    active(items)
+                } else if(setFilter == 'completed') {
+                    completed(items)
+                }
+                
             } else {
                 event.target.nextElementSibling.style.setProperty("text-decoration", "line-through");
                 array[event.target.id].complete = 'yes';
                 doneButton.innerHTML = "Undo"
                 localStorage.setItem("items", JSON.stringify(items));
+
+                if(setFilter == 'active') {
+                    active(items)
+                } else if(setFilter == 'completed') {
+                    completed(items)
+                }
             }
         })
         /*Add undo button text*/
