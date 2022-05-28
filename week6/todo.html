@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="todo.css" rel="stylesheet">
+<script src="todo.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Todo</h1>
+        <div id="box">
+            <div id="list"></div>
+            <div id="filter">
+                <div id="tasksLeft"></div>
+                <button id='display' onclick="display(items)">All</button>
+                <button id='active' onclick="active(items)">Active</button>
+                <button id='complete' onclick="completed(items)">Completed</button>
+            </div>
+        </div>
+        <form onsubmit="add()">
+            Task: <input id="newTask">
+            <input type="submit">
+        </form>
+    </main>
+</body>
+</html>

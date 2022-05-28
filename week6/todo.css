@@ -1,0 +1,45 @@
+main {
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+    font-size: larger;
+    text-decoration-thickness: 3px;
+}
+#list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+#box {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    border-top: 2px solid black;
+}
+.task {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    border-top: 2px solid black;
+}
+.task button:first-child {
+    justify-self: left;
+    width: fit-content;
+}
+.task button:last-child {
+    justify-self: right;
+    width: fit-content;
+}
+#newTask {
+    height: 30px;
+}
+#tasksLeft {
+    width: 50px;
+}
