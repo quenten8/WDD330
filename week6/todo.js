@@ -1,16 +1,17 @@
 let list = document.getElementById('list');
 
-/*Create empty array*/
-let items = [];
+/*Stores last clicked filter*/
+let setFilter = '';
 
-/*Reload tasks on page refresh*/
-window.onload = function() {
+if(localStorage.getItem('items')==null) {
+    /*Create empty array and local storage*/
+    var items = [];
+    localStorage.setItem("items", JSON.stringify(items));
+} else {
+    /*Reload list from local storage*/
     items = JSON.parse(localStorage.getItem("items"));
     display(items)
 }
-
-/*Stores last clicked filter*/
-let setFilter = '';
 
 /*Adds new tasks*/
 function add() {
