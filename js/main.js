@@ -30,7 +30,7 @@ const link = [
     label: "To do list",
     url: "week6/todo.html"},
     {week: "7",
-    label: "Facts and Jokes",
+    label: "Facts",
     url: "week7/index.html"},
     {week: "7",
     label: "ToDo Example",
