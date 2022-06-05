@@ -5,7 +5,7 @@ form.addEventListener('submit', addTask, false);
 function addTask(event) {
     event.preventDefault();
     const task = new FormData(form);
-    const url = `http://echo.jsontest.com/id/1/title/${form.task.value}`;
+    const url = `https://echo.jsontest.com/id/1/title/${form.task.value}`;
     const headers = new Headers({
         'Accept': 'application/json',
         'Content-Type': 'application/json'
