@@ -34,7 +34,13 @@ const link = [
     url: "week7/index.html"},
     {week: "7",
     label: "ToDo Example",
-    url: "week7/todo_example.html"}
+    url: "week7/todo_example.html"},
+    {week: "8",
+    label: "Canvas Example",
+    url: "week8/canvas/index.html"},
+    {week: "8",
+    label: "Remote API",
+    url: "week8/remoteAPI.html"}
             ]
 const list = document.querySelector('#list');
 

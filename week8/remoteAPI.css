@@ -1,0 +1,31 @@
+body {
+    background-color: #D6DBE1;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#output {
+    border: solid black 1px;
+    border-radius: 5px;
+}
+.person {
+    padding: 10px;
+    margin: 10px;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: white;
+}
+button {
+    padding: 8px;
+    margin: 2px;
+    margin-bottom: 15px;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
