@@ -40,7 +40,10 @@ const link = [
     url: "week8/canvas/index.html"},
     {week: "8",
     label: "Remote API",
-    url: "week8/remoteAPI.html"}
+    url: "week8/remoteAPI.html"},
+    {week: "9",
+    label: "Factors",
+    url: "week9/factors.html"}
             ]
 const list = document.querySelector('#list');
 
