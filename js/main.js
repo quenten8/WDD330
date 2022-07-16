@@ -43,7 +43,13 @@ const link = [
     url: "week8/remoteAPI.html"},
     {week: "9",
     label: "Factors",
-    url: "week9/factors.html"}
+    url: "week9/factors.html"},
+    {week: "12",
+    label: "Calculator Project",
+    url: "calculator/calculator.html"},
+    {week: "13",
+    label: "Clock Project",
+    url: "clock/clock.html"}
             ]
 const list = document.querySelector('#list');
 
